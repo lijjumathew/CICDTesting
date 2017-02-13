@@ -1,6 +1,6 @@
 from unittest import TestCase
 from mock import patch
-import cicd_testing.authentication as auth
+import cicdtesting.authentication as auth
 
 class StandAloneTests(TestCase):
     """Test the stand-alone module functions."""
