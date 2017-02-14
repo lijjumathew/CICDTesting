@@ -10,7 +10,7 @@ class StandAloneTests(TestCase):
     def test_login(self, mock_open):
         """Test the login function."""
         mock_open.return_value.read.return_value = "lijju|mathew\n"
-        self.assertTrue(auth.login('lijju', 'athew'))
+        self.assertTrue(auth.login('lijju', 'mathew'))
 
     @patch('builtins.open')
     def test_login_bad_creds(self, mock_open):
